@@ -457,19 +457,19 @@ private: System::Boolean labelContentIsCorrect() {
 private: System::Void button12_Click(System::Object^  sender, System::EventArgs^  e) {
 			 double result;
 			 switch ( this->action ) {
-				 case this->Actions::PLUS:
+				 case Actions::PLUS:
 					 result = this->firstNum + this->currentNum;
 					break;
-				 case this->Actions::MINUS:
+				 case Actions::MINUS:
 					result = this->firstNum - this->currentNum;
 					break;
-				 case this->Actions::MULTIPLY:
+				 case Actions::MULTIPLY:
 					result = this->firstNum * this->currentNum;
 					break;
-				 case this->Actions::BAJANAC:
+				 case Actions::BAJANAC:
 					result = this->firstNum / this->currentNum;
 					break;
-				 case this->Actions::POWER:
+				 case Actions::POWER:
 					result = System::Math::Pow(this->firstNum, this->currentNum);
 					break;
 				 default:
@@ -492,25 +492,25 @@ private: System::Void resetSomeValue() {
 private: System::Void button13_Click(System::Object^  sender, System::EventArgs^  e) {
 			this->firstNum = this->currentNum;
 			resetSomeValue();
-			this->action = this->Actions::PLUS;
+			this->action = Actions::PLUS;
 		 }
 // click on '-' button
 private: System::Void button14_Click(System::Object^  sender, System::EventArgs^  e) {
 			this->firstNum = this->currentNum;
 			resetSomeValue();
-			this->action = this->Actions::MINUS;
+			this->action = Actions::MINUS;
 		 }
 // click on '*' button
 private: System::Void button15_Click(System::Object^  sender, System::EventArgs^  e) {
 			this->firstNum = this->currentNum;
 			resetSomeValue();
-			this->action = this->Actions::MULTIPLY;
+			this->action = Actions::MULTIPLY;
 		 }
 // click on '/' button
 private: System::Void button16_Click(System::Object^  sender, System::EventArgs^  e) {
 			this->firstNum = this->currentNum;
 			resetSomeValue();
-			this->action = this->Actions::BAJANAC;
+			this->action = Actions::BAJANAC;
 		 }
  // click on 'clear' button
 private: System::Void button17_Click(System::Object^  sender, System::EventArgs^  e) {
@@ -523,7 +523,7 @@ private: System::Void button17_Click(System::Object^  sender, System::EventArgs^
 private: System::Void button18_Click(System::Object^  sender, System::EventArgs^  e) {
 			this->firstNum = this->currentNum;
 			resetSomeValue();
-			this->action = this->Actions::POWER;
+			this->action = Actions::POWER;
 		 }
 private: System::Void button19_Click(System::Object^  sender, System::EventArgs^  e) {
 		 }
